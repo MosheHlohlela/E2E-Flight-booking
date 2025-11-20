@@ -39,6 +39,8 @@ public class E2EFlightbooking {
 		driver.findElement(By.id("btnclosepaxoption")).click();
 		Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
 		System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
+		
+		// Multi way to click on the search button
 		// driver.findElement(By.cssSelector("#ctl00_mainContent_btn_FindFlights")).click();
 		driver.findElement(By.cssSelector("input[value='Search']")).click();
 		// driver.findElement(By.xpath("//input[@value='Search']")).click();
@@ -47,4 +49,5 @@ public class E2EFlightbooking {
 		}
 
 	}
+
 
